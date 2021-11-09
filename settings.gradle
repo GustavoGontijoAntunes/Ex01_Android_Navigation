@@ -1,0 +1,2 @@
+rootProject.name = "Ex01_Navigation_GustavoAntunes"
+include ':app'

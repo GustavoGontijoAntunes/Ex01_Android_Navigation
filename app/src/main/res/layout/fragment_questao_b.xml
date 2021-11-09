@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".QuestaoBFragment">
+
+        <TextView
+            android:id="@+id/textViewQuestao2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/Questao2"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewQuestao2" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQuestao2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQuestao2">
+
+            <RadioButton
+                android:id="@+id/radioButtonQuestao2A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Questao2_LetraA" />
+
+            <RadioButton
+                android:id="@+id/radioButtonQuestao2B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Questao2_LetraB" />
+
+            <RadioButton
+                android:id="@+id/radioButtonQuestao2C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Questao2_LetraC" />
+
+            <RadioButton
+                android:id="@+id/radioButtonQuestao2D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Questao2_LetraD" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonQuestao2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/buttonConfirmar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupQuestao2" />
+
+        <ImageView
+            android:id="@+id/imageViewQuestao2"
+            android:layout_width="00dp"
+            android:layout_height="231dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_looks_two_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

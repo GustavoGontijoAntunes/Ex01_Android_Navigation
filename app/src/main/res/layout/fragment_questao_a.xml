@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".QuestaoAFragment">
+
+        <TextView
+            android:id="@+id/textViewQuestao1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/Questao1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewQuestao1" />
+
+        <ImageView
+            android:id="@+id/imageViewQuestao1"
+            android:layout_width="0dp"
+            android:layout_height="231dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_looks_one_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQuestao1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQuestao1">
+
+            <RadioButton
+                android:id="@+id/radioButtonQuestao1A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Questao1_LetraA" />
+
+            <RadioButton
+                android:id="@+id/radioButtonQuestao1B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Questao1_LetraB" />
+
+            <RadioButton
+                android:id="@+id/radioButtonQuestao1C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Questao1_LetraC" />
+
+            <RadioButton
+                android:id="@+id/radioButtonQuestao1D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Questao1_LetraD" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonQuestao1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/buttonConfirmar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupQuestao1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
